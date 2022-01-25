@@ -1,6 +1,8 @@
 class Account:
     
     def __init__(self, id, password):
+        """id, password and balance are private attributes.
+        private attributes are attributes that can not be reached outside the class."""
         self.__id = id
         self.__password = password
         self.__balance = 10000
