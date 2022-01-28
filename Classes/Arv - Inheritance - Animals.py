@@ -7,12 +7,18 @@ class Animal:
         self.gender = gender
         self.species = species
 
+    def age_up(self):
+        self.age += 1
+
+
 class Fish(Animal):
 
     def __init__(self, length,weight, age, gender, fin_count, watertype):
         super(Fish, self).__init__(length,weight, age, gender, "Fish")
         self.fin_count = fin_count
         self.watertype = watertype
+
+nemo = Fish(50, 20, 5,  "male",2 ,"salt")
 
 class Monkey(Animal):
 
@@ -26,5 +32,7 @@ class Elephant(Animal):
         super(Elephant, self).__init__(length,weight, age, gender, "Elephant")
         self.trunk_length = trunk_length
 
-nemo = Fish(50, 20, 5, 2, "male", "salt")
+    def age_up(self):
+        self.age += 3
+
 print(nemo.length)
