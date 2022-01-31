@@ -1,12 +1,12 @@
-import random
-import time
+class Elev:
 
-from pynput.keyboard import Key, Controller
+    def __init__(self, name):
+        self.name = name
 
-keyboard = Controller()
+    def __eq__(self, other):
+        return self.name == other
 
 
-while True:
-    time.sleep(random.random())
-    keyboard.press("a")
-    keyboard.release("a")
+
+elever = [Elev("Lukas"), Elev("Godson")]
+print(elever.index("Lukas"))
