@@ -16,14 +16,17 @@ app = Ursina()
 #This makes the app-window hide the FPS and hide the exit button
 window.fps_counter.enabled = False
 window.exit_button.enabled = False
+COLORS = [color.green, color.red, color.blue, color.yellow]
 
 # The update function is what updates the game while its running. For example an object could move 5 positions each time the update runs.
 def update():
-    print(player.position)
     if player.x < 1 and player.y <1:
+        print(len(world))
         player.position = (10,0.5,10)
-        for e in world:
-            e.position = (e.y,e.x,e.z)
+        for i, color in enumerate(world):
+            for j, box in enumerate(color):
+                box.color = COLORS[(i+1) % (len(world))]
+        COLORS.append(COLORS.pop(0))
 
 
 
@@ -31,41 +34,46 @@ def update():
 # Put all entities here that is supposed to be in the app when it starts
 def createworld():
     world = []
+    colors = []
     for z in range(20):
         for x in range(20):
-            world.append(Entity(parent=scene,
+            colors.append(Entity(parent=scene,
             position=(x,0,z),
             model="cube",
             texture="white_cube",
             color=color.green,
             collider='box'))
-
+    world.append(colors)
+    colors = []
     for z in range(20):
         for x in range(20):
-            world.append(Entity(parent=scene,
+            colors.append(Entity(parent=scene,
             position=(0,x,z),
             model="cube",
             texture="white_cube",
             color=color.red,
             collider='box'))
-
+    world.append(colors)
+    colors = []
     for z in range(20):
         for x in range(20):
-            world.append(Entity(parent=scene,
+            colors.append(Entity(parent=scene,
             position=(x,20,z),
             model="cube",
             texture="white_cube",
             color=color.blue,
             collider='box'))
-
+    world.append(colors)
+    colors = []
     for z in range(20):
         for x in range(20):
-            world.append(Entity(parent=scene,
+            colors.append(Entity(parent=scene,
             position=(20,x,z),
             model="cube",
             texture="white_cube",
             color=color.yellow,
             collider='box'))
+    world.append(colors)
     return world
 
 #Call the createworld function
