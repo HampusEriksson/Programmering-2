@@ -8,7 +8,23 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 # Import the PlatformerController2d is you want to do a platform game
 from ursina.prefabs.platformer_controller_2d import PlatformerController2d
 
+class Obstacle(Entity):
 
+    def __init__(self):
+        super(Obstacle, self).__init__(
+            parent=scene,
+            position=(random.randrange(0,20), 0.5,20),
+            model="cube",
+            texture="white_cube",
+            color= random.choice([color.green, color.red, color.blue, color.yellow]),
+            collider='box'
+        )
+
+    def upd(self):
+        self.position.z = self.position.z - 1
+        print(self.position.z)
+        if self.position.z < -10:
+            del self
 
 #Create our Ursina-app
 app = Ursina()
@@ -17,16 +33,20 @@ app = Ursina()
 window.fps_counter.enabled = False
 window.exit_button.enabled = False
 COLORS = [color.green, color.red, color.blue, color.yellow]
-
+obstacles = []
+obstacles.append(Obstacle())
 # The update function is what updates the game while its running. For example an object could move 5 positions each time the update runs.
 def update():
     if player.x < 1 and player.y <1:
-        print(len(world))
-        player.position = (10,0.5,10)
-        for i, color in enumerate(world):
-            for j, box in enumerate(color):
-                box.color = COLORS[(i+1) % (len(world))]
-        COLORS.append(COLORS.pop(0))
+        player.position = (1,10,10)
+        player.rotation=(90,90,0)
+
+    for o in obstacles:
+        o.upd()
+    """for i, color in enumerate(world):
+        for j, box in enumerate(color):
+            box.color = COLORS[(i+1) % (len(world))]
+    COLORS.append(COLORS.pop(0))"""
 
 
 
