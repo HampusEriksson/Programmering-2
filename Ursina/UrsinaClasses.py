@@ -58,3 +58,24 @@ class Sun(Entity):
             model="sphere",
             color=color.yellow,
         )
+
+
+class ClickerButton(Button):
+    def __init__(self, text, x, y, myfunc):
+        super().__init__(
+            text= text
+        )
+        self.x = x
+        self.y = y
+        self.scale = 0.1
+        self.disabled = False
+        self.highlight_color = self.color.tint(0.2)
+        self.pressed_color = self.color.tint(-0.2)
+        self.color = color.azure
+        self.myfunc = myfunc
+
+    def on_click(self):
+        destroy(self)
+        self.myfunc()
+
+

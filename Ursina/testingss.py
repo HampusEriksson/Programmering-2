@@ -1,12 +1,13 @@
-# Cheat sheet for ursina : https://www.ursinaengine.org/cheat_sheet.html#Entity
-
-# Import ursina so we can use the module
+# https://www.ursinaengine.org/cheat_sheet.html
+# Import everything from my file UrsinaClasses.py so ursina and all my classes are imported
 from UrsinaClasses import *
-from dataclasses import dataclass
+# In Ursina you can work with 2D and 3D.
 
-# Import the FirstPersonController if you want to do a first person game
+# Import the FirstPersonController is you want to do a first person game
 from ursina.prefabs.first_person_controller import FirstPersonController
 
+# Import the PlatformerController2d is you want to do a platform game
+from ursina.prefabs.platformer_controller_2d import PlatformerController2d
 
 
 
@@ -17,25 +18,23 @@ app = Ursina()
 window.fps_counter.enabled = False
 window.exit_button.enabled = False
 
+# This function is not needed but it makes it more clear
+# Put all entities here that is supposed to be in the app when it starts
+def createworld():
+    ClickerButton("Go to bridge",0,0, load_bridge)
+
 # The update function is what updates the game while its running. For example an object could move 5 positions each time the update runs.
 def update():
     pass
 
-
-# This function is not needed but it makes it more clear
-# Put all entities here that is supposed to be in the app when it starts
-def createworld():
-    for z in range(20):
-        for x in range(20):
-            Ground(position=(x, 0, z))
-
-createworld()
+def load_bridge():
+    sky = Sky()
+    player = FirstPersonController(collider="cube", position=(10, 30, 10))
 #Call the createworld function
+createworld()
 
 # Creates a sky with the variable name sky. This is a prefab in Ursina
-sky = Sky()
-player = FirstPersonController(position=(10, 10, 10))
-# If you want a first person game you have to create a player with a given position
 
+# If you want a first person game you have to create a player with a given position
 
 app.run()
