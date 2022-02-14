@@ -2,14 +2,14 @@ from ursina import *
 
 class Ground(Entity):
 
-    def __init__(self, position=(0, 0, 0)):
+    def __init__(self, scale = (1,1,1), position=(0, 0, 0)):
         super(Ground, self).__init__(
             parent=scene,
             position=position,
             model="cube",
-            texture="white_cube",
-            color=color.gray,
-            collider='box'
+            color = rgb(128, 128, 0) ,
+            collider='box',
+            scale = scale
         )
 
 class Target(Entity):
@@ -33,7 +33,7 @@ class Target(Entity):
         super(Target, self).__init__(
             parent=scene,
             model="cube",
-            texture="barbar.jpg",
+            texture="Images/barbar.jpg",
             position=position,
             collider = 'cube')
 
@@ -43,6 +43,18 @@ class Target(Entity):
             self.game.targets.remove(self)
 
     def update(self):
-        self.lookAt(self.game.player.position + (0,1,0))
+        self.lookAt(self.game.player.position + (0,3,0))
         self.position += self.forward * time.dt * self.game.level
         self.scale = 1/self.game.level
+
+
+class Sun(Entity):
+
+    def __init__(self, position=(10, 10, 10)):
+        self.speed = 1
+        super(Sun, self).__init__(
+            parent=scene,
+            position=position,
+            model="sphere",
+            color=color.yellow,
+        )

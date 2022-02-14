@@ -87,7 +87,8 @@ def createworld():
     colors = []
     for z in range(20):
         for x in range(20):
-            colors.append(Entity(parent=scene,
+            colors.append(Entity(
+            parent=scene,
             position=(20,x,z),
             model="cube",
             texture="white_cube",
@@ -103,5 +104,5 @@ world = createworld()
 sky = Sky()
 
 # If you want a first person game you have to create a player with a given position
-player = FirstPersonController(position = (10,10,10))
+player = FirstPersonController(position = (10,25,10))
 app.run()
