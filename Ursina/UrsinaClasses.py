@@ -60,22 +60,3 @@ class Sun(Entity):
         )
 
 
-class WordleButton(Button):
-    def __init__(self, position):
-        super().__init__(
-            position=position,
-            scale = 0.1,
-            disabled = False,
-            highlight_color=self.color.tint(0.2),
-            pressed_color=self.color.tint(-0.2),
-            color=color.gray
-
-        )
-        self.text =Text(parent=self, text="Test", scale=10)
-
-
-    def on_click(self):
-        for key in held_keys:
-            if len(key) == 1:
-                print(self.text)
-
