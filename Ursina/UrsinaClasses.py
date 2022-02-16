@@ -60,3 +60,29 @@ class Sun(Entity):
         )
 
 
+class ReactionButton(Button):
+    def __init__(self, position, game):
+        super().__init__()
+        self.position = position
+        self.scale = 0.1
+        self.disabled = False
+        self.color = color.red
+        self.highlight_color = self.color.tint(0.2)
+        self.pressed_color = self.color.tint(-0.2)
+        self.game = game
+
+
+    def on_click(self):
+        if self.color == color.green:
+            self.color = color.red
+            self.highlight_color = self.color.tint(0.2)
+            self.pressed_color = self.color.tint(-0.2)
+            self.game.score += 1
+
+        else:
+            self.game.score -= 1
+
+    def activate(self):
+        self.color = color.green
+        self.highlight_color = self.color.tint(0.2)
+        self.pressed_color = self.color.tint(-0.2)
