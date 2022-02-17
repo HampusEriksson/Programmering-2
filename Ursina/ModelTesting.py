@@ -35,5 +35,6 @@ sky = Sky()
 # If you want a first person game you have to create a player with a given position
 player = FirstPersonController(position = (0,0,0))
 
-t = Entity(model="ModelTest.obj", color=color.green, position = (0,-10,0))
+t = Entity(model="ModelTest.obj")
+
 app.run()
