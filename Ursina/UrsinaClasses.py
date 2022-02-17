@@ -86,3 +86,21 @@ class ReactionButton(Button):
         self.color = color.green
         self.highlight_color = self.color.tint(0.2)
         self.pressed_color = self.color.tint(-0.2)
+
+
+class MenuButton(Button):
+    def __init__(self, position, scene, target):
+        super().__init__()
+        self.position = position
+        self.scale = 0.1
+        self.disabled = False
+        self.color = rgb(random.randint(0,255),random.randint(0,255),random.randint(0,255))
+        self.highlight_color = self.color.tint(0.2)
+        self.pressed_color = self.color.tint(-0.2)
+        self.scene = scene
+        self.text = Text(parent=self, text=target, scale=5, color= color.black)
+        self.target = target
+
+
+    def on_click(self):
+        self.scene.game.change_scene(self.target)
