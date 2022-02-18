@@ -1,14 +1,11 @@
-from ursina import *
 # Import everything from my file UrsinaClasses.py so ursina and all my classes are imported
-from UrsinaClasses import *
+from Ursina.UrsinaClasses import *
 # In Ursina you can work with 2D and 3D.
 
 # Import the FirstPersonController is you want to do a first person game
 from ursina.prefabs.first_person_controller import FirstPersonController
 
 # Import the PlatformerController2d is you want to do a platform game
-from ursina.prefabs.platformer_controller_2d import PlatformerController2d
-
 
 
 #Create our Ursina-app

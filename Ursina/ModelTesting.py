@@ -1,6 +1,6 @@
 # https://www.ursinaengine.org/cheat_sheet.html
 # Import everything from my file UrsinaClasses.py so ursina and all my classes are imported
-from UrsinaClasses import *
+from Ursina.UrsinaClasses import *
 # In Ursina you can work with 2D and 3D.
 
 # Import the FirstPersonController is you want to do a first person game
@@ -13,7 +13,7 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 app = Ursina()
 
 #This makes the app-window hide the FPS and hide the exit button
-window.fps_counter.enabled = False
+window.fps_counter.enabled = True
 window.exit_button.enabled = False
 
 # This function is not needed but it makes it more clear
@@ -33,8 +33,10 @@ createworld()
 sky = Sky()
 
 # If you want a first person game you have to create a player with a given position
-player = FirstPersonController(position = (0,0,0))
-
-t = Entity(model="ModelTest.obj")
+player = FirstPersonController(position = (0,10,0))
+mountains = Terrain(heightmap = "/Models/maptest.png", skip = 4)
+terrain = Entity(model = mountains, texture = color.red, scale = (10,2,10), collider = "mesh")
+#Ground(position=(0,0,0), scale = (20,1,20))
+Sky()
 
 app.run()

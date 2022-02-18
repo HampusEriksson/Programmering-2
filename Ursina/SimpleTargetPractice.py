@@ -3,7 +3,7 @@ import sys
 sys.path.append('/Programmering 2/Ursina')
 # Import ursina so we can use the module
 
-from UrsinaClasses import *
+from Ursina.UrsinaClasses import *
 from dataclasses import dataclass
 
 # Import the FirstPersonController if you want to do a first person game

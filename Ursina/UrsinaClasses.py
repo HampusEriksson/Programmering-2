@@ -1,4 +1,5 @@
 from ursina import *
+from ursina.prefabs.first_person_controller import FirstPersonController
 
 class Ground(Entity):
 
@@ -104,3 +105,20 @@ class MenuButton(Button):
 
     def on_click(self):
         self.scene.game.change_scene(self.target)
+
+class MenuButton2(Button):
+    def __init__(self, position, game, target):
+        super().__init__()
+        self.position = position
+        self.scale = 0.1
+        self.disabled = False
+        self.color = rgb(random.randint(0,255),random.randint(0,255),random.randint(0,255))
+        self.highlight_color = self.color.tint(0.2)
+        self.pressed_color = self.color.tint(-0.2)
+        self.text = Text(parent=self, text=target, scale=5, color= color.black)
+        self.target = target
+        self.game = game
+
+
+    def on_click(self):
+        self.game.change_scene(self.target)

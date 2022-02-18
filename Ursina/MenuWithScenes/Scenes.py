@@ -1,4 +1,4 @@
-from UrsinaClasses import *
+from Ursina.UrsinaClasses import *
 
 class Scene:
 
@@ -15,14 +15,21 @@ class FirstScene(Scene):
 
     def __init__(self, game):
         super(FirstScene, self).__init__("FirstScene", game)
-        self.entities.append(MenuButton((0, 0, 0), self, "Menu"))
+        self.entities = [
+            MenuButton((0, 0, 0), self, "Menu"),
+        ]
 
 
 class SecondScene(Scene):
 
     def __init__(self, game):
         super(SecondScene, self).__init__("SecondGame", game)
-        self.entities.append(MenuButton((0, 0, 0), self, "Menu"))
+        self.entities = [
+            Ground(position=(0,0,0), scale = (20,1,20)),
+            Sky()
+        ]
+
+
 
 
 class Menu(Scene):

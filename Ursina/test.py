@@ -1,6 +1,6 @@
 # https://www.ursinaengine.org/cheat_sheet.html
 # Import everything from my file UrsinaClasses.py so ursina and all my classes are imported
-from UrsinaClasses import *
+from Ursina.UrsinaClasses import *
 # In Ursina you can work with 2D and 3D.
 
 # Import the FirstPersonController is you want to do a first person game
