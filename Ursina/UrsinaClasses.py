@@ -8,7 +8,8 @@ class Ground(Entity):
             parent=scene,
             position=position,
             model="cube",
-            color = rgb(128, 128, 0) ,
+            texture="white_cube",
+            color=color.blue,
             collider='box',
             scale = scale
         )

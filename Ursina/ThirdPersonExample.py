@@ -1,5 +1,5 @@
 # Import everything from my file UrsinaClasses.py so ursina and all my classes are imported
-from Ursina.UrsinaClasses import *
+from UrsinaClasses import *
 # In Ursina you can work with 2D and 3D.
 
 #Create our Ursina-app
