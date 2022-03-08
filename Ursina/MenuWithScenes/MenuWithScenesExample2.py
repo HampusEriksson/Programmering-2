@@ -1,4 +1,4 @@
-from Ursina.UrsinaClasses import *
+from UrsinaClasses import *
 
 class Game:
 
@@ -6,12 +6,13 @@ class Game:
         self.fpc = FirstPersonController(position = (0,0,5), enabled = False)
         self.entities = []
 
-    def change_scene(self,scene):
-        self.active_scene_name = scene
-        for e in self.entities:
-            destroy(e)
+    def change_scene(self,scene_selection):
+        self.active_scene_name = scene_selection
 
-        match scene:
+        for o in self.entities:
+            destroy(o)
+
+        match scene_selection:
             case "Menu":
                 self.scenenames = ["FirstScene", "SecondScene"]
                 for x in range(2):

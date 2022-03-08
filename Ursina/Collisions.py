@@ -11,6 +11,8 @@ window.exit_button.enabled = False
 updatecount = 0
 
 def update():
+    destroylist = []
+    print(len(obstacles))
     global updatecount
     updatecount += 1
 
@@ -21,8 +23,8 @@ def update():
 
     origin = player.world_position + (
                 player.up * .5)  # the ray should start slightly up from the ground so we can walk up slopes or walk over small objects.
-    hit_info = raycast(origin, direction, ignore=(player,), distance=0.55, debug=True)
-
+    hit_info = boxcast(origin, direction, thickness = (3,3), ignore=(player,), distance=0.55, debug=True)
+    print("Träff" if hit_info.hit else "Ingen träff")
     if not hit_info.hit:
         player.position += direction * 5 * time.dt
 
@@ -41,7 +43,10 @@ def update():
         #    player.z -= 5 * time.dt
 
         if obstacle.z < player.z:
-            del obstacle
+            destroylist.append(obstacle)
+
+    for o in destroylist:
+        o.disabled = True
 
 player = Entity(parent=scene,
             position=(10,0,20),
@@ -55,6 +60,5 @@ camera.parent = player
 camera.position = (0, 11, -15)
 camera.rotation = (30, 0, 0)
 obstacles = []
-destroylist = []
 #Startar appen
 app.run()
