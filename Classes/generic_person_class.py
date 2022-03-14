@@ -44,7 +44,14 @@ class Person:
 
         elif isinstance(other, Person):
             return self.year == other.year and self.month == other.month
+    def __le__(self, other):
+        return self<other or self==other
 
+    def __ge__(self, other):
+        return self > other or self == other
+
+    def __ne__(self,other):
+        return not self == other
 p1 = Person("Mary", 2004, 4)
 p2 = Person("Ida", 2004, 9)
 p3 = Person("Fabian", 2004, 6)
