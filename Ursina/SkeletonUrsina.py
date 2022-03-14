@@ -34,5 +34,5 @@ sky = Sky()
 
 # If you want a first person game you have to create a player with a given position
 player = FirstPersonController(position = (0,0,0))
-
+print(window.left[0], window.aspect_ratio)
 app.run()
