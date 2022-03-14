@@ -58,6 +58,5 @@ for c in cards:
    if c == 5 and c > card:
        print(c)
 """
-Hearts 5
-Spades 5
+Ingenting skrivs ut
 """
