@@ -1,6 +1,15 @@
 from ursina import *
 from ursina.prefabs.first_person_controller import FirstPersonController
 
+class Obstacle(Entity):
+
+    def __init__(self, x):
+        super(Obstacle, self).__init__(model='cube',
+                color=color.red,
+                collider='box',
+                position = (x + 10, random.choice([0.5,3]), 0))
+
+
 class Ground(Entity):
 
     def __init__(self, scale = (1,1,1), position=(0, 0, 0)):
@@ -49,7 +58,6 @@ class Target(Entity):
         self.position += self.forward * time.dt * self.game.level
         self.scale = 1/self.game.level
 
-
 class Sun(Entity):
 
     def __init__(self, position=(10, 10, 10)):
@@ -60,7 +68,6 @@ class Sun(Entity):
             model="sphere",
             color=color.yellow,
         )
-
 
 class ReactionButton(Button):
     def __init__(self, position, game):
@@ -88,7 +95,6 @@ class ReactionButton(Button):
         self.color = color.green
         self.highlight_color = self.color.tint(0.2)
         self.pressed_color = self.color.tint(-0.2)
-
 
 class MenuButton(Button):
     def __init__(self, position, scene, target):

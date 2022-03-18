@@ -1,7 +1,13 @@
-print(3+5)
+class Person:
 
-print("Hello" + "World")
+    def __init__(self, name, year, month):
+        self.name = name
+        self.year = year
+        self.month = month
 
-print(["Fabian"] + ["Godson"])
 
-print(("Fabian", "David") + ("Godson", "Jorge"))
+p1 = Person("Mary", 2004, 4)
+p2 = Person("Ida", 2004, 9)
+p3 = Person("Fabian", 2004, 6)
+
+print(p1 * p3)

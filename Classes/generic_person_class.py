@@ -77,6 +77,6 @@ class Person:
         pass
 p1 = Person("Mary", 2004, 4)
 p2 = Person("Ida", 2004, 9)
-p3 = Person("Fabian", 2004, 6)
+p3 = Person("Fabian", 2004, 4)
 
-print(p1 - p3)
+print(p1 < p3)
