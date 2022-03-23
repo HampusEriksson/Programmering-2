@@ -129,3 +129,16 @@ class MenuButton2(Button):
 
     def on_click(self):
         self.game.change_scene(self.target)
+
+class TetrisBrick(Entity):
+
+    def __init__(self, position=(0, 0, 0)):
+        super(TetrisBrick, self).__init__(
+            parent=scene,
+            position=position,
+            model="cube",
+            texture="white_cube",
+            color=color.blue,
+            collider='box',
+            scale=(3,1,1)
+        )
