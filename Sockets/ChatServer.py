@@ -2,8 +2,8 @@ import socket
 import threading
 
 # Connection Data
-host = "localhost"
-port = 9999
+host = "10.154.198.74"
+port = 1337
 
 # Starting Server
 server = socket.socket()
