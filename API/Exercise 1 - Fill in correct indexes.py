@@ -19,7 +19,7 @@ print(f"One USD is worth {xxx} SEK right now.")
 
 response = requests.get("https://randomuser.me/api/")
 answer = response.json()
-print(f"Your agent name is {xxxyournamexxx} and you live in {xxxyourcountryxxx}")
+print(f"Your agent name is {''.join(answer['results'][0]['name'])} and you live in {xxxyourcountryxxx}")
 
 # Uppgift 4
 
