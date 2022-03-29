@@ -2,7 +2,8 @@
 
 from ursinanetworking import *
 
-client = UrsinaNetworkingServer("192.168.0.106", 22626)
+client = UrsinaNetworkingServer("localhost", 22626)
+
 username = input("Username: ")
 
 app = Ursina()

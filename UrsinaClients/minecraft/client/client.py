@@ -92,7 +92,7 @@ def onReplicatedVariableRemoved(variable):
         Ad.pitch = uniform(0.5, 0.9)
         Ad.play()
 
-        for i in range(randrange(2, 4)):
+        for _ in range(randrange(2, 4)):
             BreakParticle(Blocks[variable_name].texture, Blocks[variable_name].position)
 
         destroy(Blocks[variable_name])

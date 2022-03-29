@@ -2,7 +2,7 @@
 
 from ursinanetworking import *
 
-server = UrsinaNetworkingServer("192.168.0.106", 22626)
+server = UrsinaNetworkingServer("localhost", 22626)
 
 app = Ursina()
 
