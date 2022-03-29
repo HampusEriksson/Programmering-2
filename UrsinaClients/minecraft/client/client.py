@@ -24,7 +24,7 @@ BLOCKS = [
 ]
 
 App = Ursina()
-Client = UrsinaNetworkingClient("localhost", 25565)
+Client = UrsinaNetworkingClient("10.154.198.74", 25565)
 Easy = EasyUrsinaNetworkingClient(Client)
 window.borderless = False
 

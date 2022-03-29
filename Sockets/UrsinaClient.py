@@ -22,9 +22,8 @@ client.connect((host, port))
 
 # Listening to Server and Sending Nickname
 def receive():
-    threading.Timer(1, receive).start()
+    threading.Timer(1/60, receive).start()
     message = client.recv(1024).decode()
-    print(message)
     if message == 'NICK':
         client.send(bytes(nickname, "utf-8"))
 
@@ -39,7 +38,7 @@ def receive():
 
 # Sending Messages To Server
 def send_info():
-    threading.Timer(1, send_info).start()
+    threading.Timer(1/60, send_info).start()
     message = f"name:{nickname},x:{player.position.x},y:{player.position.y},z:{player.position.z}"
     client.send(bytes(message, "utf-8"))
 

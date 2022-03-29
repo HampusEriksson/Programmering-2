@@ -3,7 +3,8 @@ import socket
 s = socket.socket()
 print("Socket created")
 
-host = "192.168.0.105"
+#cmd - ipconfig - IPv4 Address
+host = "10.154.198.74"
 port = 1337
 
 #Bind säger var socketen "läggs"
@@ -18,6 +19,6 @@ while True:
    name = c.recv(1024).decode()
    print("Connected to", addr, name)
 
-   c.send(bytes("Welcome " + name +" !", "utf-8)"))
+   c.send(bytes("Welcome " + name +" !", "utf-8"))
 
    c.close()

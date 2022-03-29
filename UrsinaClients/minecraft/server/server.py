@@ -9,7 +9,7 @@ import asyncio
 
 print("Hello from the server !")
 
-Server = UrsinaNetworkingServer("localhost", 25565)
+Server = UrsinaNetworkingServer("10.154.198.74", 25565)
 Easy = EasyUrsinaNetworkingServer(Server)
 Blocks = {}
 
