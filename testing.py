@@ -17,12 +17,23 @@ app = Ursina()
 
 
 def update():
-    print((held_keys["d"] - held_keys["a"]))
-    player.x += (held_keys["d"] - held_keys["a"])*time.dt
-    player.y += (held_keys["w"] - held_keys["s"])*time.dt
+    player.y -= player.speed* time.dt
 
+    if player.y <-3 and player.speed>0:
+        player.speed = -1
 
+    elif player.speed < 0:
+        player.speed += 0.01
 
-player = Entity(model="cube", position=(0,0,0),color=rgb(random.randrange(255),random.randrange(255),random.randrange(255)))
+def spawn_ent():
+    Entity(model="cube", position=(random.random()),color=rgb(random.randrange(255),random.randrange(255),random.randrange(255)))
 
+player = Entity(model="cube", position=(0,0,0),color=rgb(random.randrange(255),random.randrange(255),random.randrange(255)), speed = 1)
+
+b = WindowPanel(
+    title="Options",
+
+)
+
+b.on_click = spawn_ent
 app.run()
