@@ -48,4 +48,5 @@ sky = Sky()
 player = FirstPersonController(position = (0,0,0))
 suns = [Sun(position = (5,5,5)), Sun(position = (8,8,8))]
 sun = Sun()
+wall = Entity(model="cube", scale=(1,3,1), collider="cube")
 app.run()

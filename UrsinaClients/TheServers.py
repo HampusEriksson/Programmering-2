@@ -4,7 +4,6 @@ from ursinanetworking import *
 
 server = UrsinaNetworkingServer("localhost", 22626)
 
-app = Ursina()
 
 @server.event
 def onClientConnected(Client):
@@ -21,4 +20,3 @@ def ClientConnected(user):
 def update():
     server.process_net_events()
 
-app.run()
