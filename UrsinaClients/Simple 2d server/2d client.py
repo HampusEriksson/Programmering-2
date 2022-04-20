@@ -12,11 +12,14 @@ Players = {}
 
 window.borderless = False
 
+@Client.event
+def onConnectionEstablished():
+    print("Connected")
 
 @Easy.event
 def onReplicatedVariableCreated(variable):
     print(variable)
-    Players[variable.name] = Player(variable.content["Position"], variable.name)
+    Players[variable.name] = Player(name = variable.name, position = variable.content["Position"])
 
 @Easy.event
 def onReplicatedVariableUpdated(variable):
@@ -34,15 +37,12 @@ def Move(Vec):
 App = Ursina()
 sky = Sky()
 ground = Entity(collider="sphere", model="cube", position=(0,-5,0), scale=(10,1,10))
-player = Player()
+player = Player(name=input("Name?"))
 
 def update():
     if player.position[1] < -5:
         player.position = (randrange(0, 15), 10, randrange(0, 15))
-
-    for p in Players:
-        Players[p].position += (Vec3(PlayersTargetPos[p]) - Players[p].position) / 25
-
+    Client.process_net_events()
     Easy.process_net_events()
 
 

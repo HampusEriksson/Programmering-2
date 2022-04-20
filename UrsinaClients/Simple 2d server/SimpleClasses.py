@@ -3,7 +3,7 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 
 
 class Player(FirstPersonController):
-    def __init__(self, position, name):
+    def __init__(self,name, position=(0,0,0)):
         super().__init__(
             parent=scene,
             position=position,
