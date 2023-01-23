@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9ef3a024-5705-4a9b-b5db-8120994c3730" name="Changes" comment="Spawn objects with button">
+      <change afterPath="$PROJECT_DIR$/glosor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ursina/SpawnOtherObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ursina/SpawnOtherObject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ursina/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ursina/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="23dfbGUzpGNXVfVSYB6gNTwtgtA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hampus.eriksson4\Documents\GitHub\Programmering 2\Ursina" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hampus.eriksson4\Documents\GitHub\Programmering 2\UrsinaClients\minecraft\client" />
+      <recent name="C:\Users\hampus.eriksson4\Documents\GitHub\Programmering 2\Sockets" />
+      <recent name="C:\Users\hampus.eriksson4\Documents\GitHub\Programmering 2\API" />
+      <recent name="C:\Users\hampus.eriksson4\Documents\GitHub\Programmering 2\Ursina" />
+      <recent name="C:\Users\hampus.eriksson4\Documents\GitHub\Programmering 2\Ursina\MenuWithScenes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.SpawnOtherObject">
+    <configuration name="EnemiesExample" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programmering 2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ursina" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ursina/EnemiesExample.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Local and Global Variables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programmering 2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Local and Global Variables.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SpawnOtherObject" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programmering 2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ursina" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ursina/SpawnOtherObject.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programmering 2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ursina" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ursina/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programmering 2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.EnemiesExample" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.testing" />
+      <item itemvalue="Python.Local and Global Variables" />
+      <item itemvalue="Python.SpawnOtherObject" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.SpawnOtherObject" />
+        <item itemvalue="Python.testing" />
+        <item itemvalue="Python.Local and Global Variables" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.EnemiesExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ef3a024-5705-4a9b-b5db-8120994c3730" name="Changes" comment="" />
+      <created>1642068954490</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642068954490</updated>
+    </task>
+    <task id="LOCAL−00001" summary="Simple menu">
+      <created>1642519205085</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1642519205085</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Simple menu">
+      <created>1642599830782</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1642599830782</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Simple menu">
+      <created>1643120405773</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1643120405773</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Simple menu">
+      <created>1643209431025</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1643209431025</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Simple menu">
+      <created>1643210158911</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1643210158911</updated>
+    </task>
+    <task id="LOCAL−00006" summary="Simple menu">
+      <created>1643362700742</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1643362700742</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Simple menu">
+      <created>1643617107569</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1643617107570</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Simple menu">
+      <created>1643704891159</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1643704891159</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Simple menu">
+      <created>1643708446955</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1643708446955</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Simple menu">
+      <created>1643812574951</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1643812574951</updated>
+    </task>
+    <task id="LOCAL−00011" summary="Simple menu">
+      <created>1643966990882</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1643966990883</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Simple menu">
+      <created>1644220637329</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1644220637329</updated>
+    </task>
+    <task id="LOCAL−00013" summary="Simple menu">
+      <created>1644329167100</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1644329167100</updated>
+    </task>
+    <task id="LOCAL−00014" summary="Ursina updated">
+      <created>1644411206486</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1644411206486</updated>
+    </task>
+    <task id="LOCAL−00015" summary="Ursina updated">
+      <created>1644417241410</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1644417241410</updated>
+    </task>
+    <task id="LOCAL−00016" summary="Ursina updated">
+      <created>1644495395648</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1644495395648</updated>
+    </task>
+    <task id="LOCAL−00017" summary="Ursina updated">
+      <created>1644495413806</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1644495413806</updated>
+    </task>
+    <task id="LOCAL−00018" summary="Ursina updated">
+      <created>1644572645528</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1644572645528</updated>
+    </task>
+    <task id="LOCAL−00019" summary="Ursina updated">
+      <created>1644917436816</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1644917436816</updated>
+    </task>
+    <task id="LOCAL−00020" summary="2d clicker game">
+      <created>1645022115928</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1645022115928</updated>
+    </task>
+    <task id="LOCAL−00021" summary="2d clicker game">
+      <created>1645174844975</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1645174844975</updated>
+    </task>
+    <task id="LOCAL−00022" summary="2d clicker game">
+      <created>1645176453156</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1645176453156</updated>
+    </task>
+    <task id="LOCAL−00023" summary="Updates">
+      <created>1645623284092</created>
+      <option name="number" value="LOCAL−00023" />
+      <option name="presentableId" value="LOCAL−00023" />
+      <updated>1645623284092</updated>
+    </task>
+    <task id="LOCAL−00024" summary="Updates">
+      <created>1645626803479</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1645626803479</updated>
+    </task>
+    <task id="LOCAL−00025" summary="Updates">
+      <created>1646732175153</created>
+      <option name="number" value="LOCAL−00025" />
+      <option name="presentableId" value="LOCAL−00025" />
+      <updated>1646732175153</updated>
+    </task>
+    <task id="LOCAL−00026" summary="Generic classes">
+      <created>1647239749985</created>
+      <option name="number" value="LOCAL−00026" />
+      <option name="presentableId" value="LOCAL−00026" />
+      <updated>1647239749985</updated>
+    </task>
+    <task id="LOCAL−00027" summary="Generic classes">
+      <created>1647247379220</created>
+      <option name="number" value="LOCAL−00027" />
+      <option name="presentableId" value="LOCAL−00027" />
+      <updated>1647247379220</updated>
+    </task>
+    <task id="LOCAL−00028" summary="Generic classes">
+      <created>1647248064874</created>
+      <option name="number" value="LOCAL−00028" />
+      <option name="presentableId" value="LOCAL−00028" />
+      <updated>1647248064874</updated>
+    </task>
+    <task id="LOCAL−00029" summary="Generic classes">
+      <created>1647336110636</created>
+      <option name="number" value="LOCAL−00029" />
+      <option name="presentableId" value="LOCAL−00029" />
+      <updated>1647336110636</updated>
+    </task>
+    <task id="LOCAL−00030" summary="Wordle Solver">
+      <created>1647343872506</created>
+      <option name="number" value="LOCAL−00030" />
+      <option name="presentableId" value="LOCAL−00030" />
+      <updated>1647343872506</updated>
+    </task>
+    <task id="LOCAL−00031" summary="Wordle Solver">
+      <created>1647598008952</created>
+      <option name="number" value="LOCAL−00031" />
+      <option name="presentableId" value="LOCAL−00031" />
+      <updated>1647598008952</updated>
+    </task>
+    <task id="LOCAL−00032" summary="API examples">
+      <created>1647849351717</created>
+      <option name="number" value="LOCAL−00032" />
+      <option name="presentableId" value="LOCAL−00032" />
+      <updated>1647849351717</updated>
+    </task>
+    <task id="LOCAL−00033" summary="API examples">
+      <created>1647941511665</created>
+      <option name="number" value="LOCAL−00033" />
+      <option name="presentableId" value="LOCAL−00033" />
+      <updated>1647941511665</updated>
+    </task>
+    <task id="LOCAL−00034" summary="API examples">
+      <created>1648028462429</created>
+      <option name="number" value="LOCAL−00034" />
+      <option name="presentableId" value="LOCAL−00034" />
+      <updated>1648028462429</updated>
+    </task>
+    <task id="LOCAL−00035" summary="API examples">
+      <created>1648450346101</created>
+      <option name="number" value="LOCAL−00035" />
+      <option name="presentableId" value="LOCAL−00035" />
+      <updated>1648450346101</updated>
+    </task>
+    <task id="LOCAL−00036" summary="API examples">
+      <created>1648453075149</created>
+      <option name="number" value="LOCAL−00036" />
+      <option name="presentableId" value="LOCAL−00036" />
+      <updated>1648453075149</updated>
+    </task>
+    <task id="LOCAL−00037" summary="Socket updates">
+      <created>1648540785728</created>
+      <option name="number" value="LOCAL−00037" />
+      <option name="presentableId" value="LOCAL−00037" />
+      <updated>1648540785728</updated>
+    </task>
+    <task id="LOCAL−00038" summary="Socket updates">
+      <created>1648541581843</created>
+      <option name="number" value="LOCAL−00038" />
+      <option name="presentableId" value="LOCAL−00038" />
+      <updated>1648541581843</updated>
+    </task>
+    <task id="LOCAL−00039" summary="Ursina FPS Server">
+      <created>1648647101796</created>
+      <option name="number" value="LOCAL−00039" />
+      <option name="presentableId" value="LOCAL−00039" />
+      <updated>1648647101797</updated>
+    </task>
+    <task id="LOCAL−00040" summary="Ursina FPS Server">
+      <created>1648647226380</created>
+      <option name="number" value="LOCAL−00040" />
+      <option name="presentableId" value="LOCAL−00040" />
+      <updated>1648647226380</updated>
+    </task>
+    <task id="LOCAL−00041" summary="Ursina FPS Server">
+      <created>1648647243847</created>
+      <option name="number" value="LOCAL−00041" />
+      <option name="presentableId" value="LOCAL−00041" />
+      <updated>1648647243847</updated>
+    </task>
+    <task id="LOCAL−00042" summary="Feklsökning">
+      <created>1650357524164</created>
+      <option name="number" value="LOCAL−00042" />
+      <option name="presentableId" value="LOCAL−00042" />
+      <updated>1650357524164</updated>
+    </task>
+    <task id="LOCAL−00043" summary="Feklsökning">
+      <created>1650613417177</created>
+      <option name="number" value="LOCAL−00043" />
+      <option name="presentableId" value="LOCAL−00043" />
+      <updated>1650613417177</updated>
+    </task>
+    <task id="LOCAL−00044" summary="EnemiesExample">
+      <created>1650616807722</created>
+      <option name="number" value="LOCAL−00044" />
+      <option name="presentableId" value="LOCAL−00044" />
+      <updated>1650616807722</updated>
+    </task>
+    <task id="LOCAL−00045" summary="Local and Global variables">
+      <created>1651565851438</created>
+      <option name="number" value="LOCAL−00045" />
+      <option name="presentableId" value="LOCAL−00045" />
+      <updated>1651565851438</updated>
+    </task>
+    <task id="LOCAL−00046" summary="Spawn objects with button">
+      <created>1652860243653</created>
+      <option name="number" value="LOCAL−00046" />
+      <option name="presentableId" value="LOCAL−00046" />
+      <updated>1652860243653</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Simple menu" />
+    <MESSAGE value="Ursina updated" />
+    <MESSAGE value="2d clicker game" />
+    <MESSAGE value="Updates" />
+    <MESSAGE value="Generic classes" />
+    <MESSAGE value="Wordle Solver" />
+    <MESSAGE value="API examples" />
+    <MESSAGE value="Socket updates" />
+    <MESSAGE value="Ursina FPS Server" />
+    <MESSAGE value="Feklsökning" />
+    <MESSAGE value="EnemiesExample" />
+    <MESSAGE value="Local and Global variables" />
+    <MESSAGE value="Spawn objects with button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spawn objects with button" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Ursina/UrsinaConstants.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Ursina/FirstUrsinaGenomgång.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
