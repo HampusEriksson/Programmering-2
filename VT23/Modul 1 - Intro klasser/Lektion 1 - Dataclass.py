@@ -29,11 +29,3 @@ enemy2.hp -= enemy1.attack
 print(f"{enemy2.name} now has {enemy2.hp} hp left. Fs in the chat.")
 
 print(enemy1)
-
-
-class ClassName:
-    def __init__(self) -> None:
-        pass
-
-    def __str__(self) -> str:
-        pass
