@@ -1,4 +1,5 @@
 import random
+from __future__ import annotations
 
 
 class Pokemon:
@@ -12,7 +13,7 @@ class Pokemon:
     def __str__(self) -> str:
         return f"{self.name} - HP: {self.hp}"
 
-    def battle(self, other_pokemon):
+    def battle(self, other_pokemon: Pokemon):
         print(f"{self.name} attacks {other_pokemon.name}.")
 
         if random.random() > 0.25:
