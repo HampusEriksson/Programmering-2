@@ -19,21 +19,12 @@ all_pokemon.append(Pokemon("Blastoise", "Water", 250))
 while True:
     choice = input("1. Create Pokémon\n2. Look at all Pokémon\n3. Quit\n").lower()
     if choice in ["1", "create"]:
-<<<<<<< HEAD
         all_pokemon.append(Pokemon(input("Name? "), input("Type? "), int(input("Hp? "))))
 
 
     elif choice in ["2" , "look"]:
        print(*all_pokemon)
 
-=======
-        # Create a new X
-        pass
-
-    elif choice in ["2", "look"]:
-        # Look at all X
-        pass
->>>>>>> 7497861dcf9b1d574652b621b4e691119adaafa2
 
     elif choice in ["3", "quit"]:
         break

@@ -6,8 +6,9 @@
 # Function - Should do one thing and do it very well
 # Using global variables in a function makes it harder to search for errors and harder to use the function in another program
 
-from MyFunctions import *
-
+def add_7(x):
+    return x + 7
+    
 result = 18
 
 result = add_7(result)
