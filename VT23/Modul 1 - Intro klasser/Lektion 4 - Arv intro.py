@@ -7,7 +7,7 @@ class Pet:
         self.smell = smell
 
     def __str__(self) -> str:
-        return f""
+        return f"{self.name}"
 
     def get_smarter(self):
         self.int += 10
