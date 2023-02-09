@@ -17,5 +17,8 @@ class Fabian(Person):
         self.cool = True
 
 
-johan = Johan(17, "040838")
+# Vi vill skapa klasser som vi kan använda flera gånger
+# T.ex. då inte en klass som heter Johan som vi använder en gång
+johan = Person("Johan", 17, "040838")
+# johan = Johan(17, "040838")
 fabian = Fabian(17, "041338")
