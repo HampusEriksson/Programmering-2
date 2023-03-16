@@ -45,9 +45,10 @@ class Stone(Entity):
             collider="sphere",
             player=player,
         )
-        self.look_at(player)
 
     def update(self):
+        # en_entity.look_at(en annan entity)
+        self.look_at(self.player)
         self.position += self.forward * time.dt
 
         if self.y < 0:
@@ -55,3 +56,7 @@ class Stone(Entity):
 
         if self.intersects(self.player):
             quit()
+
+    def input(self, key):
+        if self.hovered and key == "left mouse down":
+            destroy(self)

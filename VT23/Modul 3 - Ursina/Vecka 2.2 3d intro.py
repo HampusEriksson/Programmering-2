@@ -22,14 +22,17 @@ def createworld():
 
 # The update function is what updates the game while its running. For example an object could move 5 positions each time the update runs.
 counter = 0
+spawn_counter = 120
 
 
 def update():
-    global counter
+    global counter, spawn_counter
     counter += 1
 
-    if counter % 120 == 0:
+    if counter % spawn_counter == 0:
         Stone(player=player)
+        spawn_counter -= 1
+        spawn_counter = max(10, spawn_counter)
 
     if player.y < -10:
         player.position = (10, 30, 10)
