@@ -50,7 +50,7 @@ def update():
 # Bakgrundsfärg
 # rgb = red, green, blue. Blandning mellan 0 och 255
 window.color = rgb(255, 0, 0)
-window.color = color.blue
+window.color = color.pink
 
 # Call the createworld function
 createworld()

@@ -22,3 +22,36 @@ class Apple(Entity):
             color=color.green,
             collider="sphere",
         )
+
+
+class Brick(Entity):
+    def __init__(self, position) -> None:
+        super().__init__(
+            model="cube", texture="brick", position=position, collider="box"
+        )
+
+
+class Stone(Entity):
+    def __init__(self, player) -> None:
+
+        super().__init__(
+            model="sphere",
+            texture="grass",
+            position=(
+                random.randrange(-5, 25),
+                2,
+                random.randrange(-5, 25),
+            ),
+            collider="sphere",
+            player=player,
+        )
+        self.look_at(player)
+
+    def update(self):
+        self.position += self.forward * time.dt
+
+        if self.y < 0:
+            destroy(self)
+
+        if self.intersects(self.player):
+            quit()
