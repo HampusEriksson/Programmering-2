@@ -60,3 +60,28 @@ class Stone(Entity):
     def input(self, key):
         if self.hovered and key == "left mouse down":
             destroy(self)
+
+
+class Bullet(Entity):
+    def __init__(self, player) -> None:
+
+        super().__init__(
+            model="sphere",
+            color=color.red,
+            position=player.position + (0.4, -1.4, 0),
+            collider="sphere",
+            texture="white_cube",
+            scale=0.2,
+            forward=player.forward,
+        )
+
+    def update(self):
+        self.position += self.forward * time.dt
+
+        if self.y < 0:
+            destroy(self)
+
+        for item in self.intersects().entities:
+            if isinstance(item, Stone):
+                destroy(self)
+                destroy(item)
