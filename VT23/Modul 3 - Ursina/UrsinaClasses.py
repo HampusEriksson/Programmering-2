@@ -57,9 +57,10 @@ class Stone(Entity):
         if self.intersects(self.player):
             quit()
 
-    def input(self, key):
-        if self.hovered and key == "left mouse down":
-            destroy(self)
+        if self.intersects().entities != []:
+            for item in self.intersects().entities:
+                if isinstance(item, Bullet):
+                    destroy(self)
 
 
 class Bullet(Entity):
@@ -68,20 +69,16 @@ class Bullet(Entity):
         super().__init__(
             model="sphere",
             color=color.red,
-            position=player.position + (0.4, -1.4, 0),
+            position=player.position + (0, 2, 0) + player.forward,
             collider="sphere",
-            texture="white_cube",
             scale=0.2,
             forward=player.forward,
+            rotation=player.rotation,
+            rotation_x=player.camera_pivot.rotation_x,
         )
+        # self.acc = 1
 
     def update(self):
-        self.position += self.forward * time.dt
-
-        if self.y < 0:
-            destroy(self)
-
-        for item in self.intersects().entities:
-            if isinstance(item, Stone):
-                destroy(self)
-                destroy(item)
+        self.position += self.forward * time.dt * 50  # * self.acc
+        # self.acc *= 1.01
+        self.y -= 0.01
