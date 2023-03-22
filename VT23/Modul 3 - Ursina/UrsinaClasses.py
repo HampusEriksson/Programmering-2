@@ -1,4 +1,5 @@
 from ursina import *
+from ursina.prefabs.health_bar import HealthBar
 
 
 class Obstacle(Entity):
@@ -63,6 +64,52 @@ class Stone(Entity):
                     destroy(self)
 
 
+class Enemy(Entity):
+    def __init__(self, player) -> None:
+
+        super().__init__(
+            model="cube",
+            texture=random.choice(["skeleton.png", "sins.jpg", "among.jpg"]),
+            position=(
+                random.randrange(-5, 25),
+                2,
+                random.randrange(-5, 25),
+            ),
+            collider="box",
+            player=player,
+        )
+        health = random.randrange(1, 5)
+        self.health = health
+        self.health_bar = HealthBar(
+            parent=self,
+            bar_color=color.lime.tint(-0.25),
+            roundness=0.5,
+            value=health,
+            show_text=False,
+            show_lines=False,
+        )
+
+    def update(self):
+        # en_entity.look_at(en annan entity)
+        self.look_at(self.player)
+        self.position += self.forward * time.dt
+
+        if self.y < 0:
+            destroy(self)
+
+        if self.intersects(self.player):
+            quit()
+
+        if self.intersects().entities != []:
+            for item in self.intersects().entities:
+                if isinstance(item, Bullet):
+                    destroy(item)
+                    self.health -= 1
+                    self.health_bar.value -= 1
+                    if self.health == 0:
+                        destroy(self)
+
+
 class Bullet(Entity):
     def __init__(self, player) -> None:
 
@@ -76,7 +123,7 @@ class Bullet(Entity):
             rotation=player.rotation,
             rotation_x=player.camera_pivot.rotation_x,
         )
-        # self.acc = 1
+        destroy(self, delay=3)
 
     def update(self):
         self.position += self.forward * time.dt * 50  # * self.acc
