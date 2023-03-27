@@ -82,6 +82,7 @@ class Enemy(Entity):
         self.health = health
         self.health_bar = HealthBar(
             parent=self,
+            y=1.2,
             bar_color=color.lime.tint(-0.25),
             roundness=0.5,
             value=health,
