@@ -4,6 +4,8 @@ import socket
 nickname = input("Choose your nickname: ")
 
 # Connecting To Server
+# windows - cmd - ipconfig - IPv4 Address
+
 client = socket.socket()
 host = "10.158.78.100"
 port = 1337

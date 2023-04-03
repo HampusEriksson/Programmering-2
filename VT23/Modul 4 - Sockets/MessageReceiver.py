@@ -2,6 +2,7 @@ import socket
 import threading
 
 # Connection Data
+# windows - cmd - ipconfig - IPv4 Address
 host = "10.158.78.100"
 port = 1337
 
