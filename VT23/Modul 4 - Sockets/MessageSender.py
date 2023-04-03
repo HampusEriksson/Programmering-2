@@ -5,7 +5,7 @@ nickname = input("Choose your nickname: ")
 
 # Connecting To Server
 client = socket.socket()
-host = "10.151.212.111"
+host = "10.158.78.100"
 port = 1337
 client.connect((host, port))
 
