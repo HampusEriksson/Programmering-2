@@ -3,7 +3,7 @@ import threading
 import os
 
 # Connection Data
-host = "10.158.78.100"
+host = "10.151.212.111"
 port = 1337
 
 # Starting Server
