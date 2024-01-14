@@ -1,0 +1,2 @@
+class Pokemon:
+    pass
