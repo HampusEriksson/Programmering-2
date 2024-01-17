@@ -24,6 +24,9 @@ class Student(Person):
             f"{self.name} sleeps {hours} hours a night and {hours/2} during Hampus's lessons."
         )
 
+    def give_up(self):
+        del self
+
 
 class Teacher(Person):
     def __init__(self, name, age, height, salary=0) -> None:
